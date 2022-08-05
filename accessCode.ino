@@ -47,13 +47,13 @@ void loop() {
     } else  { //  Incorrect code is entered
       lcd.clear();    
       lcd.print(" Access Denied  ");
-      digitalWrite(A3, HIGH); 
+      digitalWrite(A3, 1); 
       delay(200);
-      digitalWrite(A3, LOW); 
+      digitalWrite(A3, 0); 
       delay(200);
-      digitalWrite(A3, HIGH); 
+      digitalWrite(A3, 1); 
       delay(200);
-      digitalWrite(A3, LOW); 
+      digitalWrite(A3, 0); 
       lcd.clear();
       strncpy(str1, "", 4);  
       n = 0; 
